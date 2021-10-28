@@ -1,5 +1,7 @@
 #include "tfmini.h"
 
+//Driver for TFmini Lidar I2C for Raspberry Pi written in C++
+
 Tfmini::Tfmini(uint8_t Adress_slave): _Adress_slave(Adress_slave)
 {
     _i2c = new I2C(_Adress_slave , 1); 
